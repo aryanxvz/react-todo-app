@@ -5,12 +5,12 @@ mongoose.connect("mongodb+srv://aryanxvz:aryan0709@cluster0.qvmhxgy.mongodb.net/
 
 const todoSchema = mongoose.Schema({
     title: String,
-    desccription: String,
+    description: String,
     completed: Boolean
 })
 
 const todo = mongoose.model ('todos', todoSchema)
 
-mnodule.exports = {
+module.exports = {
     todo: todo
 }
